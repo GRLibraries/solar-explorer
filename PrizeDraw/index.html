@@ -14,12 +14,12 @@
 
     </div>
   </div>
-    <h1 class="body-content">Random Task Generator</h1>
+    <h1 class="body-content">Solar Explorer Prize Draw</h1>
     <div id="panel" class="body-content">
-        <div id="field_name" class="slender-body">Prize Draw for Solar Explorer</div>
+        <div id="field_name" class="slender-body">Winner to receive a Skywatcher 70mm Telescope</div>
    
     <div id="gifContainer" class="body-image">
-        <img src="/assets/LGA-MAP.png" alt="LGA map" id="shrugGif">
+        <img src="./assets/LGA-MAP.png" alt="LGA map" id="shrugGif">
     </div>
     <button class="body-content" id="generateBtn">Pick a Winner</button>
     <div id="result"></div> </div>	
@@ -49,7 +49,7 @@ const tasks = [
 
             const randomIndex = Math.floor(Math.random() * tasks.length);
             const selectedTask = tasks[randomIndex];
-            result.textContent = `Selected Task: ${selectedTask}`;
+            result.textContent = `Prize Winner: ${selectedTask}`;
             
             localStorage.setItem('lastClick', now);
         });
