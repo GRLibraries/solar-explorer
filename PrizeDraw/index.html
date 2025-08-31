@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Task Generator</title>
+    <link rel="stylesheet" href="../assets/css/grcstyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Random-Task-Generator/">Home</a></li>
+            <li><a href='../Book%20List%20Generator/'>Book List HTML Generator</a></li>
+        </ul>
+    </nav>
+    <h1 class="body-content">Random Task Generator</h1>
+    <div id="panel" class="body-content">
+        <div id="field_name" class="slender-body">Are you overwhelmed with tasks and don't know where to start? Worry no longer with Will's fail-safe, 100% guaranteed-to-work-for-you-every-single-time and not at all vulnerable to cyber attacks RANDOM TASK GENERATOR</div>
+   
+    <div id="gifContainer" class="body-image">
+        <img src="https://willisaverb.github.io/Random-Task-Generator/assets/images/Whatmeworry.gif" alt="Pixel art beard man shrugs" id="shrugGif">
+    </div>
+    <button class="body-content" id="generateBtn">Take the decision out of my hands</button>
+    <div id="result"></div> </div>	
+
+    <script>
+        
+const tasks = [
+    "Ernest Zhang",
+    "Jenny Young",
+    "Leon Urwin",
+    "Paige Crawford",
+    "Harry Crawford",
+    "Zachary Hanssens",
+    "Jeremy Hanssens",
+    "Evelyn Loney",
+    "Jade Bux",
+    "Alyan Ali Muhammad"
+];
+
+
+        const generateBtn = document.getElementById('generateBtn');
+        const result = document.getElementById('result');
+
+        generateBtn.addEventListener('click', () => {
+            
+        
+
+            const randomIndex = Math.floor(Math.random() * tasks.length);
+            const selectedTask = tasks[randomIndex];
+            result.textContent = `Selected Task: ${selectedTask}`;
+            
+            localStorage.setItem('lastClick', now);
+        });
+    </script>
+</body>
+</html>
